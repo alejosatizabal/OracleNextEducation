@@ -1,5 +1,5 @@
 
-let numeroMaximo = 4;
+let numeroMaximo = 0;
 let numeroSecreto;
 let intentos;
 let listaNumerosSorteados = [];
@@ -54,6 +54,8 @@ function generarNumeroSecreto() {
 }
 
 function condicionesIniciales(){
+    cambiarRango();
+    document.querySelector('input').setAttribute('max',numeroMaximo);
     asignarTextoElemento('h1', '¡Juego del número secreto!');
     asignarTextoElemento('p', `Indica un número del 1 al ${numeroMaximo}`);
     numeroSecreto = generarNumeroSecreto();
@@ -66,6 +68,13 @@ function reiniciarJuego(){
     limpiarCaja();
     condicionesIniciales();
     document.querySelector('#reiniciar').setAttribute('disabled','true'); // El # se usa para ingresar un Id en querySelector
+}
+
+function cambiarRango(){
+    numeroMaximo = parseInt(prompt('Seleccione el rango, de 1 a...'));
+    console.log( isNaN(numeroMaximo) );
+    ( isNaN(numeroMaximo) ? ( numeroMaximo=10, alert('Dato invalido, se establece en 10')  ) : alert(`Establecido de 1 a ${numeroMaximo}`) )
+    document.querySelector('#rango').setAttribute('disabled','true');
 }
 
 condicionesIniciales();
