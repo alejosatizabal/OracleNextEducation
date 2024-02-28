@@ -12,7 +12,7 @@
 
 ### Taller 5 . HTML y CSS3 parte 3: Trabajando con formularios y tablas
 
-Taller 6 . HTML y CSS3 parte 4: Avanzando en CSS
+### Taller 6 . HTML y CSS3 parte 4: Avanzando en CSS
 
 Taller 7 . Git y GitHub: repositorio, commit y versiones
 
