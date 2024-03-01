@@ -14,7 +14,7 @@
 
 ### Taller 6 . HTML y CSS3 parte 4: Avanzando en CSS
 
-Taller 7 . Git y GitHub: repositorio, commit y versiones
+### Taller 7 . Git y GitHub: repositorio, commit y versiones
 
 # Formación Desarrollo Personal
 
