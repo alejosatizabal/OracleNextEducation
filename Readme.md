@@ -18,13 +18,13 @@
 
 # Formación Desarrollo Personal
 
-Taller A . Aprender a aprender: Técnicas para tu autodesarrollo
+### Taller A . Aprender a aprender: Técnicas para tu autodesarrollo
 
-Taller B . Linkedin: Como hacer que tu perfil trabaje por ti
+### Taller B . Linkedin: Como hacer que tu perfil trabaje por ti
 
-Taller C . Foco: Enfocarse trae más resultados para el día a día
+### Taller C . Foco: Enfocarse trae más resultados para el día a día
 
-Taller D . Hábitos: Ser productivo para cumplir tus metas personales
+### Taller D . Hábitos: Ser productivo para cumplir tus metas personales
 
 # Desafío
 
