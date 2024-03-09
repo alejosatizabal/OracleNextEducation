@@ -1,0 +1,140 @@
+
+@media (max-width:1080px){
+    main {
+        display: flex;
+        /* justify-content: none; */
+        flex-direction: row;
+    }
+
+    .caja-textarea, .botones {
+        position: relative;
+        top: 0;
+        height: 0;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .seccion-ingreso-texto {
+        /* position: static; */
+        border: solid 1px;
+        width: 80%;
+        margin: 10%;
+    }
+
+    .seccion-resultado {
+        /* position: static; */
+        width: 80%;
+        top: 90%;
+
+        height: 500px;
+        right: 0px;
+        margin: 10%;
+    }
+
+    .muneco {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* .seccion-ingreso-texto {
+    width: 60%;
+} */
+
+/* .seccion-resultado {
+    width: 40%;
+} */
+
+/* .text-area {
+    border: 1px;
+    color: #0a3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    resize: none;
+} */
+
+/* ::placeholder {
+    color: #0a3871;
+} */
+
+/* .text-area:focus {
+    outline: none;
+} */
+
+/* .mensaje {
+    background: white;
+    background-image: url("./imagenes/muneco.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding: 20px;
+    position: fixed;
+
+    width: 400px;
+    height: 700px;
+    resize: none;
+} */
+
+/* .mensaje:focus {
+    outline: none;
+} */
+
+/* .botones {
+    display: flex;
+    margin-top: 18px;
+} */
+
+/* .btn-desencriptar {
+    text-align: center;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+} */
+
+/* .btn-encriptar {
+    text-align: center;
+    background: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+} */
+
+/* .copiar {
+    text-align: center;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 140px;
+    margin-top: 650px;
+    position: absolute;
+    width: 336px;
+    transition: 1000ms;
+} */
+
+/* .copiar:hover {
+    background-color: #8189cc;
+} */
+
+/* .informacion {
+    color: #495057;
+    font-size: 18px;
+} */
