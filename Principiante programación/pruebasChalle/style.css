@@ -1,0 +1,43 @@
+div { 
+    /* display: inline-flex; */
+    border: 1px solid;
+    box-sizing: border-box;
+    /* height: 500px; */
+}
+
+.contenedor {
+    /* width: 90%;
+    border: none;
+    margin-top: 1%;
+    margin-left: 5%; */
+    border: none;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clase1, .clase2, .clase3, .clase4{
+    transition: 1200ms;
+}
+
+.clase1 {
+    width: 50%;
+}
+
+.clase2 {
+    width: 20%;
+}
+
+.clase3 {
+    width: 15%;
+}
+
+.clase4 {
+    width: 15%;
+}
+
+@media (max-width: 480px) {
+    .clase1, .clase2, .clase3, .clase4{
+        width: 100%;
+    }
+}

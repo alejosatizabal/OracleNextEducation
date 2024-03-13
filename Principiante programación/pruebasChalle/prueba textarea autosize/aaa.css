@@ -1,0 +1,4 @@
+textarea.resizable {
+    resize: none; /* Desactivar el redimensionamiento del usuario */
+    overflow: hidden; /* Ocultar el desbordamiento */
+}

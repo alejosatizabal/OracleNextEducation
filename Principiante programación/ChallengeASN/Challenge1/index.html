@@ -17,7 +17,7 @@
     <main>
         <section class="seccion-ingreso-texto">
             <div class="caja-textarea">
-                <textarea class="text-area" rows="10" cols="30" placeholder="Ingrese el texto aquí"></textarea>
+                <textarea class="text-area" rows="10" cols="30" placeholder="Ingrese el texto aquí" onchange="() => lowCase()"></textarea>
             </div>
             <div class="informacion">
                 <p>Solo letras minusculas y sin acentos</p>
@@ -28,20 +28,24 @@
             </div>
         </section>
         <section class="seccion-resultado">
-            <div class="contenedor-muneco">
-                <img class="muneco" src="./imagenes/muneco.png">
+            <div class="area-resultado">
+                <div class="contenedor-resultado">
+                    <textarea class="resultado" readonly ></textarea>
+                </div>
+                <div class="contenedor-muneco">
+                    <img class="muneco" src="./imagenes/muneco.png">
+                </div>
+                <!-- <textarea class="mensaje" rows="10" cols="20"></textarea> -->
+                
+                <div class="contenedor-vacio">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div class="contenedor-copiar">
+                    <button class="btn-copiar" onclick="copiarTexto()" >Copiar</button>
+                </div>
             </div>
-            <!-- <textarea class="mensaje" rows="10" cols="20"></textarea> -->
-            <div class="contenedor-resultado">
-                <p>(resultado vacío)</p>
-            </div>
-            <div class="contenedor-vacio">
-                <h3>Ningún mensaje fue encontrado</h3>
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
-            </div>
-            <div class="contenedor-copiar">
-                <button class="btn-copiar" onclick="copiarTexto()" >Copiar</button>
-            </div>
+            
         </section>
     </main>
     

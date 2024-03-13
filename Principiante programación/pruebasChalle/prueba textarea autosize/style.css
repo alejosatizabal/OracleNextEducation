@@ -1,0 +1,54 @@
+.textarea {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* font-family: inherit; */
+    /* font-size: inherit; */
+    /* padding: 1px 6px; */
+  }
+  
+  .textarea {
+    display: block;
+    width: 40%;
+    overflow: hidden;
+    /* resize: both; */
+    /* min-height: 40px; */
+    min-height: 200px;
+    line-height: 20px;
+
+    padding: 1%;
+    background: red;
+  }
+
+.span2 {
+    border: 1px solid #d60d0d;
+    background: white;
+    box-sizing: border-box;
+    width: 98%;
+    display: block;
+
+    max-height: 150px;
+    overflow: hidden;
+    /* font-family: inherit; */
+    /* font-size: inherit; */
+    /* padding: 1px 6px; */
+  }
+  
+  /* .textarea[contenteditable]:empty::before {
+    content: "Placeholder still possible";
+    color: gray;
+  } */
+  
+  /* Just for demo */
+  /* * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Heebo", sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  p strong {
+    display: block;
+  } */
