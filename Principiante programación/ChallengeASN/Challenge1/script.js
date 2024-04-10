@@ -9,6 +9,8 @@ const vacio = document.querySelector(".contenedor-vacio");
 
 var textareap = document.getElementById('textareap');
 var main = document.querySelector("main");
+var seccionResultado = document.querySelector(".seccion-resultado");
+var contenedorResultado = document.querySelector(".contenedor-resultado");
 
 //btnCopiar.style.display = "none";
 //muneco.style.display = "none";
@@ -169,8 +171,14 @@ function ajustarAlturaTextarea() {
     main.style.height = (700 + textareap.scrollHeight) + 'px';
     
     textareap.style.height = textareap.scrollHeight + 'px'; // Ajustar la altura al contenido
+
+    seccionResultado.style.height = textareap.scrollHeight + 'px'
+    areaResultado.style.height = textareap.scrollHeight + 'px'
+    contenedorResultado.style.height = textareap.scrollHeight + 'px'
+    mensaje.style.height = textareap.scrollHeight + 'px'
 }
 
 // Llamar a la función de ajuste de altura cuando se carga la página y cuando el contenido del textarea cambia
 document.addEventListener('DOMContentLoaded', ajustarAlturaTextarea);
-document.getElementById('textareap').addEventListener('input', ajustarAlturaTextarea);
+// document.getElementById('textareap').addEventListener('input', ajustarAlturaTextarea);
+document.querySelector('.resultado').addEventListener('input', ajustarAlturaTextarea);

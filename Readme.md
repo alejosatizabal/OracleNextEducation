@@ -16,7 +16,7 @@
 
 ### Taller 7 . Git y GitHub: repositorio, commit y versiones
 
-# Formación Desarrollo Personal
+# Formación Desarrollo Personal - Soft Skills
 
 ### Taller A . Aprender a aprender: Técnicas para tu autodesarrollo
 
