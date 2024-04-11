@@ -20,7 +20,7 @@ body{
 }
 
 header {
-    /* display: block;
+/* display: block;
     width: 30%; */
     position: absolute;
     width: 100%;
@@ -146,12 +146,12 @@ main {
 }
 
 .seccion-resultado {
-    width: 30%;
+    
 }
 
 .area-resultado {
-    /* display: block; */
-    /* position: relative; */
+    border: 1px solid orange;
+    box-sizing: border-box;
 
     /* display: flex; */
     position: relative;
@@ -243,19 +243,33 @@ main {
     height: 90%;
     /* height: 10px; */
     padding: 5%;
-    /* border: 1px solid greenyellow;
-    box-sizing: border-box; */
+    border: 1px solid black;
+    box-sizing: border-box;
     /* margin-top: 25px; */
     /* margin-left: 25px; */
 }
 
-.contenedor-resultado textarea{
-    display: none;
-    height: 100%;
-    width: 100%;
-    resize: none;
+.contenedor-resultado textarea{ /* asn salen */
+
+
+
+
+
+
+}
+
+#textareap {
+    background-color: aqua;border: 1px solid blue;
+    box-sizing: border-box;
+
     color: #495057;
     font-size: 25px;
+    width: 100%;
+}
+
+#textareap.resizable {
+    resize: none; /* Desactivar el redimensionamiento del usuario */
+    overflow: hidden; /* Ocultar el desbordamiento */
 }
 
 .contenedor-copiar{
@@ -330,7 +344,6 @@ main {
     }
 
     .caja-textarea {
-        
         display: block;
         position: relative;
         width: 90%;
@@ -370,6 +383,7 @@ main {
     .area-resultado {
         border: 1px solid yellow;
         height: 133px;
+        min-height: 133px;
 
         width: 90%;
         max-width: 100%;
@@ -394,23 +408,28 @@ main {
     }
     
     .contenedor-resultado{
-        border: 1px solid green;
+        /* border: 1px solid green; */
 
         width: 100%;
         height: 100%;
+        min-height: 133px;
         padding: 0;
         /* padding-top: 1%; */
     }
     
-    .contenedor-resultado textarea{
+    /* .contenedor-resultado textarea{ */ .resultado {
+        border: 1px solid lime;
+        box-sizing: border-box;
+
         position: relative;
         display: block;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
+        align-self: center;
         width: 90%;
-        height: 80%;
-        margin: 10px;
+        /* height: 80%; */
+        margin: 0 2%;
         /* margin: 5%; */
-        padding: 10px;
+        /* padding: 2%; */
         /* padding: 5%;
         height: 90%;
         width: 90%; */
@@ -425,7 +444,7 @@ main {
     }
     
     .contenedor-copiar{
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
         /* height: 30%; */
         /* display: block; */
         /* position: absolute; */
@@ -438,26 +457,24 @@ main {
     }
     
     .btn-copiar{
-        top: 50%;
-        width: 80%;
-        /* margin-top: 50%; */
 
-        /* display: none;
-        width: 180px;
-        height: 57px;
-        border-radius: 24px;
-        background-color: #ffffff;
-        color: #0A3871;
-        font-size: 16px;
-        font-weight: 400;
-        font-family: 'Inter', sans-serif;
-        border: 1px solid #0A3871;
-        cursor: pointer;
-        position: relative;
-        top: 400px; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
-
-    
 }
 
 @media screen and (max-width:375px){

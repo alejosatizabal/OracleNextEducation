@@ -7,6 +7,11 @@ const btnCopiar = document.querySelector(".btn-copiar");
 const muneco = document.querySelector(".contenedor-muneco");
 const vacio = document.querySelector(".contenedor-vacio");
 
+var textareap = document.getElementById('textareap');
+var main = document.querySelector("main");
+var seccionResultado = document.querySelector(".seccion-resultado");
+var contenedorResultado = document.querySelector(".contenedor-resultado");
+
 //btnCopiar.style.display = "none";
 //muneco.style.display = "none";
 mensaje.style.display = "none";
@@ -64,6 +69,9 @@ function respuestaLlena() {
 function btnEncriptar() {
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
+
+    textareap.value = textoEncriptado
+    ajustarAlturaTextarea()
     
     //areaResultado.style.height = `${133 + parseInt((mensaje.value.length / 62)*25)}px`
 
@@ -80,12 +88,12 @@ function btnEncriptar() {
 }
 
 function encriptar(stringEncriptada) {
-    let matrizCodigo = [["e","enter_"], ["i","imes_"], ["a","ai_"], ["o","ober_"], ["u","ufat_"]]
+    let matrizCodigo = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]]
     stringEncriptada = stringEncriptada.toLowerCase()
 
     for(let i = 0; i<matrizCodigo.length; i++){
         if(stringEncriptada.includes(matrizCodigo[i][0])){
-            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
+            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], `_${matrizCodigo[i][1]}_`)
         }
     }
     return stringEncriptada.replaceAll("_","")
@@ -99,13 +107,13 @@ function btnDesencriptar() {
 }
 
 function desencriptar(stringDesencriptada) {
-    let matrizCodigo = [["e_","enter"], ["i_","imes"], ["a_","ai"], ["o_","ober"], ["u_","ufat"]]
+    let matrizCodigo = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]]
     stringDesencriptada.
     stringDesencriptada = stringDesencriptada.toLowerCase()
 
     for(let i = 0; i<matrizCodigo.length; i++){
         if(stringDesencriptada.includes(matrizCodigo[i][1])){
-            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
+            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], `_${matrizCodigo[i][0]}_`)
         }
     }
 
@@ -154,3 +162,23 @@ function lowCase() {
     let textoIngresado = textArea.value.toLowerCase()
     textArea.value = textoIngresado
 }
+
+// Función para ajustar la altura del textarea basado en su contenido
+function ajustarAlturaTextarea() {
+
+    textareap.style.height = 'auto'; // Resetear la altura a 'auto' para obtener el tamaño deseado
+
+    main.style.height = (700 + textareap.scrollHeight) + 'px';
+    
+    textareap.style.height = textareap.scrollHeight + 'px'; // Ajustar la altura al contenido
+
+    seccionResultado.style.height = textareap.scrollHeight + 'px'
+    areaResultado.style.height = textareap.scrollHeight + 'px'
+    contenedorResultado.style.height = textareap.scrollHeight + 'px'
+    mensaje.style.height = textareap.scrollHeight + 'px'
+}
+
+// Llamar a la función de ajuste de altura cuando se carga la página y cuando el contenido del textarea cambia
+document.addEventListener('DOMContentLoaded', ajustarAlturaTextarea);
+// document.getElementById('textareap').addEventListener('input', ajustarAlturaTextarea);
+document.querySelector('.resultado').addEventListener('input', ajustarAlturaTextarea);
